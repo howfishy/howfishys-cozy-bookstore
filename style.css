@@ -5,15 +5,20 @@
     box-sizing: border-box;
 }
 
-/* Background Image */
+/* Set Fullscreen Background */
 .background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('images/background.jpg') no-repeat center center/cover;
+    background-image: url('images/background.webp');  /* Adjust name if different */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Keeps it behind other elements */
 }
+
 
 /* Placeholder Elements */
 .placeholder {
